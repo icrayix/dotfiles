@@ -1,0 +1,101 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "theme": "Vercel Dark",
+  "tab_bar": {
+    "show": true
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
+  "features": {
+    "inline_completion_provider": "supermaven"
+  },
+  "telemetry": {
+    "metrics": false
+  },
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "buffer_font_family": "JuliaMono Nerd Font Mono",
+  "relative_line_numbers": true,
+  "scrollbar": { "show": "never" },
+  "inlay_hints": {
+    "enabled": false
+  },
+  // Use zed commit editor
+  "terminal": {
+    "env": {
+      "EDITOR": "zed --wait"
+    }
+  },
+  // Move all panel to the right
+  "project_panel": {
+    "button": true,
+    "dock": "right",
+    "git_status": true
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  // Move some unnecessary panels to the left
+  "notification_panel": {
+    "dock": "left"
+  },
+  "chat_panel": {
+    "dock": "left"
+  },
+  "languages": {
+    "TSX": {
+      "show_inline_completions": true
+    },
+    "TypeScript": {
+      "show_inline_completions": true,
+      "inlay_hints": {
+        "enabled": false,
+        "show_parameter_hints": false,
+        "show_other_hints": true,
+        "show_type_hints": true
+      },
+      "language_servers": ["Emmet Language Server"]
+    },
+    "Elixir": {
+      "show_inline_completions": false,
+      "language_servers": [
+        "tailwindcss-language-server",
+        "elixir-ls",
+        "!lexical",
+        "!next-ls"
+      ],
+      "format_on_save": {
+        "external": {
+          "command": "mix",
+          "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"]
+        }
+      }
+    }
+  },
+  "lsp": {
+    "tailwindcss-language-server": {
+      "settings": {
+        "includeLanguages": {
+          "heex": "html",
+          "Elixir": "html"
+        }
+      }
+    }
+  }
+}
