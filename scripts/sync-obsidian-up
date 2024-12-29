@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rclone sync --exclude .git ~/Documents/ObsidianVault icrayix-drive:/Obsidian/
