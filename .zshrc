@@ -84,3 +84,6 @@ fi
 # Bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun completions
+[ -s "/home/tobi/.bun/_bun" ] && source "/home/tobi/.bun/_bun"

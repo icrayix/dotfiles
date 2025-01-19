@@ -1,6 +1,21 @@
 theme = tokyonight
-font-size = 12
 font-family = JetBrains Mono
+font-size = 12
 background-opacity = 0.95
 background-blur-radius = 20
+unfocused-split-opacity = 0.90
 mouse-hide-while-typing = true
+confirm-close-surface = false
+
+keybind = alt+t=new_tab
+keybind = alt+q=close_surface
+
+keybind = alt+g>j=new_split:down
+keybind = alt+g>k=new_split:up
+keybind = alt+g>l=new_split:right
+keybind = alt+g>h=new_split:left
+keybind = alt+j=goto_split:down
+keybind = alt+k=goto_split:up
+keybind = alt+l=goto_split:right
+keybind = alt+h=goto_split:left
+
