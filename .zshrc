@@ -70,6 +70,7 @@ alias l="eza --long --header --git --all --icons --group-directories-first --no-
 alias lg="lazygit"
 alias m="make"
 alias cat="bat"
+alias br="bun run"
 
 # Shell integrations
 eval "$(fzf --zsh)"
