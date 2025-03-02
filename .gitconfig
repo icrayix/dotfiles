@@ -17,5 +17,6 @@
 [delta]
   navigate = true
   dark = true
+  plus-style = syntax "#20303b"
 [merge]
   conflictstyle = zdiff3

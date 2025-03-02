@@ -62,8 +62,8 @@ setopt hist_find_no_dups
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'l $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'l $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --long --header --git --all --icons --group-directories-first --no-user --no-permissions --git-ignore $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza --long --header --git --all --icons --group-directories-first --no-user --no-permissions --git-ignore $realpath'
 
 # Aliases
 alias l="eza --long --header --git --all --icons --group-directories-first --no-user --no-permissions --git-ignore"
@@ -88,3 +88,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # bun completions
 [ -s "/home/tobi/.bun/_bun" ] && source "/home/tobi/.bun/_bun"
+
+# rust
+. "$HOME/.cargo/env"
+
+# fnm node version manager
+eval "$(fnm env --use-on-cd --shell zsh)"
