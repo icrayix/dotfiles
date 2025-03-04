@@ -62,6 +62,7 @@ setopt hist_find_no_dups
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
+setopt globdots # include hidden files in fzf-tab
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --long --header --git --all --icons --group-directories-first --no-user --no-permissions --git-ignore $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza --long --header --git --all --icons --group-directories-first --no-user --no-permissions --git-ignore $realpath'
 
