@@ -72,6 +72,7 @@ alias lg="lazygit"
 alias m="make"
 alias cat="bat"
 alias br="bun run"
+alias c="clear"
 
 # Shell integrations
 eval "$(fzf --zsh)"
@@ -94,4 +95,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 . "$HOME/.cargo/env"
 
 # fnm node version manager
-eval "$(fnm env --use-on-cd --shell zsh)"
+eval "$(fnm env --shell zsh)"

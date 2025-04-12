@@ -7,94 +7,115 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "theme": "0x96f Theme",
-  "tab_bar": {
-    "show": true
-  },
-  "assistant": {
-    "default_model": {
-      "provider": "google",
-      "model": "gemini-2.0-flash"
-    },
-    "version": "2"
-  },
-  "features": {
-    "edit_prediction_provider": "supermaven"
-  },
-  "telemetry": {
-    "metrics": false
-  },
-  "vim_mode": true,
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
-  "buffer_font_family": "JetBrains Mono",
-  "relative_line_numbers": true,
-  "scrollbar": { "show": "never" },
-  "inlay_hints": {
-    "enabled": false
-  },
-  // Use zed commit editor
-  "terminal": {
-    "env": {
-      "EDITOR": "zed --wait"
-    }
-  },
-  // Move all panel to the right
-  "project_panel": {
-    "button": true,
-    "dock": "right",
-    "git_status": true
-  },
-  "outline_panel": {
-    "dock": "right"
-  },
-  "collaboration_panel": {
-    "dock": "left"
-  },
-  // Move some unnecessary panels to the left
-  "notification_panel": {
-    "dock": "left"
-  },
-  "chat_panel": {
-    "dock": "left"
-  },
-  "languages": {
-    "TSX": {
-      "show_edit_predictions": true
-    },
-    "TypeScript": {
-      "show_edit_predictions": true,
-      "inlay_hints": {
-        "enabled": false,
-        "show_parameter_hints": false,
-        "show_other_hints": true,
-        "show_type_hints": true
-      }
-    },
-    "Elixir": {
-      "show_edit_predictions": false,
-      "language_servers": [
-        "tailwindcss-language-server",
-        "elixir-ls",
-        "!lexical",
-        "!next-ls"
-      ],
-      "format_on_save": {
-        "external": {
-          "command": "mix",
-          "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"]
-        }
-      }
-    }
-  },
-  "lsp": {
-    "tailwindcss-language-server": {
-      "settings": {
-        "includeLanguages": {
-          "heex": "html",
-          "Elixir": "html"
-        }
-      }
-    }
-  }
+	"theme": "0x96f Theme",
+	"tab_bar": {
+		"show": true
+	},
+	"assistant": {
+		"default_model": {
+			"provider": "google",
+			"model": "gemini-2.0-flash"
+		},
+		"version": "2"
+	},
+	"features": {
+		"copilot": true,
+		"edit_prediction_provider": "zed"
+	},
+	"telemetry": {
+		"metrics": false
+	},
+	"vim_mode": true,
+	"vim": {
+		"use_system_clipboard": "on_yank",
+		"use_multiline_find": true
+	},
+	"ui_font_size": 16,
+	"buffer_font_size": 16,
+	"buffer_font_family": "JetBrains Mono",
+	"relative_line_numbers": true,
+	"scrollbar": { "show": "never" },
+	"inlay_hints": {
+		"enabled": false
+	},
+	"diagnostics": {
+		"inline": {
+			"enabled": true
+		}
+	},
+	"terminal": {
+		"env": {
+			"EDITOR": "zed --wait"
+		}
+	},
+	"project_panel": {
+		"button": true,
+		"dock": "right",
+		"git_status": true
+	},
+	"outline_panel": {
+		"dock": "right"
+	},
+	"collaboration_panel": {
+		"dock": "left"
+	},
+	"notification_panel": {
+		"dock": "left"
+	},
+	"chat_panel": {
+		"dock": "left"
+	},
+	"languages": {
+		"TSX": {
+			"show_edit_predictions": true
+		},
+		"TypeScript": {
+			"show_edit_predictions": true,
+			"inlay_hints": {
+				"enabled": false,
+				"show_parameter_hints": false,
+				"show_other_hints": true,
+				"show_type_hints": true
+			}
+		},
+		"Elixir": {
+			"show_edit_predictions": false,
+			"language_servers": [
+				"tailwindcss-language-server",
+				"elixir-ls",
+				"!lexical",
+				"!next-ls"
+			],
+			"format_on_save": {
+				"external": {
+					"command": "mix",
+					"arguments": ["format", "--stdin-filename", "{buffer_path}", "-"]
+				}
+			}
+		}
+	},
+	"lsp": {
+		"tailwindcss-language-server": {
+			"settings": {
+				"includeLanguages": {
+					"heex": "html",
+					"Elixir": "html"
+				}
+			},
+			"biome": {
+				"settings": {
+					"require_config_file": true
+				}
+			}
+		}
+	},
+	"formatter": {
+		"language_server": {
+			"name": "biome"
+		}
+	},
+	"code_actions_on_format": {
+		"source.fixAll.biome": true,
+		"source.organizeImports.biome": true
+	}
 }
