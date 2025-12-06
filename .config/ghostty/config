@@ -6,6 +6,8 @@ background-blur-radius = 20
 unfocused-split-opacity = 0.90
 mouse-hide-while-typing = true
 confirm-close-surface = false
+quit-after-last-window-closed = false
+working-directory = home
 
 keybind = alt+t=new_tab
 keybind = alt+q=close_surface

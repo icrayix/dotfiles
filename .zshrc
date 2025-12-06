@@ -96,3 +96,14 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # fnm node version manager
 eval "$(fnm env --shell zsh)"
+
+export SSH_AUTH_SOCK=~/.1password/agent.sock
+
+# opencode
+export PATH=/home/tobi/.opencode/bin:$PATH
+# zig
+export PATH=/home/tobi/.zig/bin:$PATH
+
+alias claude="/home/tobi/.claude/local/claude"
+
+alias docker="podman"
