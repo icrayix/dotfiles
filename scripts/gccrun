@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    echo "Usage: $0 <source_file.c>"
+    exit 1
+fi
+
+file=$(realpath "$1")
+name=$(basename "$file" .c)
+
+output_bin="/tmp/$name"
+
+gcc -std=c99 -O2 -g3 \
+    -Wall -Wextra -Wpedantic \
+    -Wformat=2 -Wfloat-equal -Wlogical-op -Wcast-align \
+    -fanalyzer \
+    -fsanitize=address,undefined -fno-omit-frame-pointer \
+    -fstack-protector-all -D_FORTIFY_SOURCE=3 \
+    "$file" -o "$output_bin" && "$output_bin" "${@:2}"

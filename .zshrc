@@ -85,5 +85,12 @@ if [ -z "$SSH_AGENT_PID" ]; then
 fi
 
 export SSH_AUTH_SOCK=~/.1password/agent.sock
+export PATH=$PATH:~/.cargo/bin:~/.local/bin
 
 alias docker="podman"
+
+# opencode
+export PATH=/home/tobi/.opencode/bin:$PATH
+
+# Vite+ bin (https://viteplus.dev)
+. "$HOME/.vite-plus/env"

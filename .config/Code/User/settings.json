@@ -1,0 +1,259 @@
+{
+  "editor.fontSize": 16,
+  "terminal.integrated.fontSize": 16,
+  "editor.wordBasedSuggestions": "off",
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "0x96f",
+"notebook.experimental.useMarkdownRenderer": true,
+
+
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "F"],
+      "commands": ["workbench.action.files.openFile"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.showAllEditors"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<leader>", "?"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<leader>", "g"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "commands": ["outline.focus"]
+    },
+    {
+      "before": ["<leader>", "S"],
+      "commands": ["workbench.action.showAllSymbols"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "commands": ["workbench.actions.view.problems"]
+    },
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "commands": ["references-view.findReferences"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.focusNextGroup"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["<leader>", "C"],
+      "commands": ["editor.action.blockComment"]
+    },
+    {
+      "before": ["<leader>", "y"],
+      "commands": ["editor.action.clipboardCopyAction"]
+    },
+    {
+      "before": ["<leader>", "Y"],
+      "commands": ["editor.action.clipboardCopyAction"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.openRecent"]
+    },
+    {
+      "before": ["<leader>", "/"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["g", "y"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["references-view.findReferences"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "a"],
+      "commands": ["workbench.action.openPreviousRecentlyUsedEditorInGroup"]
+    },
+    {
+      "before": ["g", "n"],
+      "commands": ["workbench.action.nextEditorInGroup"]
+    },
+    {
+      "before": ["g", "p"],
+      "commands": ["workbench.action.previousEditorInGroup"]
+    },
+    {
+      "before": ["g", "."],
+      "commands": ["workbench.action.navigateForward"]
+    },
+    {
+      "before": ["H"],
+      "commands": ["workbench.action.previousEditorInGroup"]
+    },
+    {
+      "before": ["L"],
+      "commands": ["workbench.action.nextEditorInGroup"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "g"],
+      "commands": ["workbench.action.editor.nextChange"]
+    },
+    {
+      "before": ["[", "g"],
+      "commands": ["workbench.action.editor.previousChange"]
+    },
+    {
+      "before": ["]", "f"],
+      "commands": ["editor.gotoNextSymbolFromResult"]
+    },
+    {
+      "before": ["[", "f"],
+      "commands": ["editor.gotoPreviousSymbolFromResult"]
+    },
+    {
+      "before": ["]", "c"],
+      "commands": ["workbench.action.editor.nextChange"]
+    },
+    {
+      "before": ["[", "c"],
+      "commands": ["workbench.action.editor.previousChange"]
+    },
+    {
+      "before": ["]", "<space>"],
+      "commands": ["editor.action.insertLineAfter"]
+    },
+    {
+      "before": ["[", "<space>"],
+      "commands": ["editor.action.insertLineBefore"]
+    },
+    {
+      "before": ["="],
+      "commands": ["editor.action.formatSelection"]
+    },
+    {
+      "before": ["%"],
+      "commands": ["editor.action.selectAll"]
+    },
+    {
+      "before": ["z", "z"],
+      "commands": ["revealLine"],
+      "args": { "lineNumber": "center" }
+    },
+    {
+      "before": ["z", "c"],
+      "commands": ["revealLine"],
+      "args": { "lineNumber": "center" }
+    },
+    {
+      "before": ["z", "t"],
+      "commands": ["revealLine"],
+      "args": { "lineNumber": "top" }
+    },
+    {
+      "before": ["z", "b"],
+      "commands": ["revealLine"],
+      "args": { "lineNumber": "bottom" }
+    },
+    {
+      "before": ["<C-w>", "w"],
+      "commands": ["workbench.action.focusNextGroup"]
+    },
+    {
+      "before": ["<C-w>", "<C-w>"],
+      "commands": ["workbench.action.focusNextGroup"]
+    },
+    {
+      "before": ["<C-w>", "v"],
+      "commands": ["workbench.action.splitEditorRight"]
+    },
+    {
+      "before": ["<C-w>", "s"],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+    {
+      "before": ["<C-w>", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["<C-w>", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["<C-w>", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["<C-w>", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["<C-w>", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<C-w>", "o"],
+      "commands": ["workbench.action.toggleEditorWidths"]
+    },
+    {
+      "before": ["Q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    }
+  ],
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
+}

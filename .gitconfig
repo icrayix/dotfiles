@@ -9,14 +9,21 @@
 [gpg]
   format = ssh
 
-# configure delta
-[core]
-  pager = delta
-[interactive]
-  diffFilter = delta --color-only
-[delta]
-  navigate = true
-  dark = true
-  plus-style = syntax "#20303b"
+[pull]
+	rebase = false
+
 [merge]
   conflictstyle = zdiff3
+
+# configure delta
+[diff]
+  external = difft
+
+# [core]
+#   pager = delta
+# [interactive]
+#   diffFilter = delta --color-only
+# [delta]
+#   navigate = true
+#   dark = true
+#   plus-style = syntax "#20303b"

@@ -1,7 +1,9 @@
 git:
   pagers:
-    - colorArg: always
-      pager: delta --dark --paging=never
+    - useExternalDiffGitConfig: true
+    # - colorArg: always
+    #   pager: delta --dark --paging=never
+
 gui:
   nerdFontsVersion: "3"
   theme:

@@ -1,1 +1,16 @@
-theme = "tokyonight"
+theme = "gruvbox_dark_hard"
+
+[editor]
+line-number = "relative"
+cursorline = true
+popup-border = "all"
+end-of-line-diagnostics = "info"
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+
+[keys.normal]
+C-s = ":w"
+
+[keys.insert]
+j = { k = "normal_mode" } 
