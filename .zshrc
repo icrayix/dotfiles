@@ -90,7 +90,7 @@ export PATH=$PATH:~/.cargo/bin:~/.local/bin
 alias docker="podman"
 
 # opencode
-export PATH=/home/tobi/.opencode/bin:$PATH
+export PATH=/home/tobi/.opencode/bin:/home/tobi/.bun/bin:$PATH
 
 # Vite+ bin (https://viteplus.dev)
 . "$HOME/.vite-plus/env"
